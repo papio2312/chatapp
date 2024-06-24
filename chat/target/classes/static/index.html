@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatter!</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Front page -->
+    <div class="front-page">
+        <img id="picture" src="image/images.png" alt="">
+        <h1 id="title">Welcome to Chatter!</h1>
+        <form id="userNameForm">
+            <label id="user">What is your username?</label>
+            <input type="text" id="username" placeholder="Type your username." autocomplete="off" required><br>
+            <button id="btn">Let's Chat!</button>
+        </form>
+    </div>
+
+    <!-- Chat page -->
+    <div id="chat-page" class="hidden">
+        <h2>Chatter!</h2>
+        <div class="connecting">Connecting to Chatter...</div><br/>
+        <ul id="messageArea">
+
+        </ul>
+        <form id="messageForm">
+            <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+            
+            <button type="submit" class="primary">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

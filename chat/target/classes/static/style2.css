@@ -1,0 +1,217 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url("image/improve-employee-engagement-with-texting.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: auto;
+    background-attachment: fixed; 
+    overflow: hidden;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.front-page{
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+#btn{
+  margin: 13px;
+  font-family: monospace;
+  background-color: rgb(245, 245, 245);
+  color: #3b82f6;
+  border: 2px solid ;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+}
+
+#btn:hover{
+    background-color: rgb(60, 74, 112);
+    transition-delay: 0.1s;
+    color: whitesmoke
+}
+
+#picture{
+    max-width: 80%;
+    height: auto;
+    border: 2px solid turquoise;
+    border-radius: 600%;
+}
+
+#user, #username{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.orbitron, #title, #user, #btn, #username, .connecting, #chat-page h2 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/*--------------------------------------------------------------------------*/
+
+.hidden{
+    visibility: hidden;
+}
+
+/*chat page*/
+#chat-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+  width: 800px; 
+  height: 500px; 
+  margin: auto;
+  padding: 40px; 
+  background-color: aliceblue; 
+  overflow: hidden; 
+
+}
+
+.connecting {
+  text-align: center;
+  padding: auto;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+/*Button*/
+.primary {
+    padding: 8px 16px;
+    display: block;
+    width: 80px;
+    left: 30px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+
+    
+  }
+
+.primary:hover {
+    background-color: rgb(60, 74, 112);
+    border-color: rgb(60, 74, 112);
+    transition: all .1s ease-in-out;
+  }
+
+  #messageArea {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    height: 300px; /* Example height to trigger scrollbar; adjust as needed */
+    
+}
+
+#messageForm {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+}
+
+#message {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+#messageArea {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  height: 300px; /* Example height to trigger scrollbar; adjust as needed */
+}
+
+#messageArea .chat-message,
+#messageArea .event-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+#messageArea .event-message {
+  background-color: #e1f5fe;
+  font-style: italic;
+  text-align: center;
+  justify-content: center;
+}
+
+#messageArea .chat-message i {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+#messageArea .chat-message span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#messageArea .chat-message p {
+  margin: 0;
+  word-wrap: break-word;
+}
